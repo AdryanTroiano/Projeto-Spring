@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="fmt" uri="jakarta.tags.fmt" %>
 
 <jsp:include page="layouttopo.jsp"></jsp:include>
 
@@ -36,7 +37,7 @@
                         <td>${item.categoria}</td>
                         <td>${item.quantidade}</td>
                         <td>${item.descricao}</td>
-                        <td>${item.data}</td>
+                        <td><fmt:formatDate value="${item.data}" pattern="dd/MM/yyyy"/></td>
                         <td>
                             <c:choose>
                                 <c:when test="${item.comprado}">
