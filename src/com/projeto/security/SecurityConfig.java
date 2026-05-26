@@ -38,12 +38,10 @@ public class SecurityConfig {
             "/view/**",
             "/api/**",
             "/",
-            "/index",
             "/login",
             "/cadastrarusuario",
-            "/empresa",
-            "/contato",
-            "/error"
+            "/error",
+            "/compras/**"
         };
 
         return http
