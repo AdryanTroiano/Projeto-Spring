@@ -250,40 +250,6 @@ footer {
   margin: 0;
 }
 
-@media print{
-  body *{
-    visibility: hidden;
-  }
-  #relatorio, #relatorio *{
-    visibility: visible;
-  }
-  #relatorio{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-  #relatorio table{
-    border-collapse: collapse;
-    width: 100%;
-  }
-  #relatorio tr, #relatorio th, #relatorio td{
-    border: 1px solid #000;
-  }
-  #relatorio button{
-    visibility: hidden;
-  }
-
-   .pesquisa-lista{
-    display: none !important;
-  }
-
-  #relatorio button{
-    display: none;
-  }
-
-}
-
 /* ===== PÁGINA DE ERRO ===== */
 
 .erro-card {
@@ -336,3 +302,38 @@ footer {
     transform: translateY(0);
   }
 }
+
+@media print{
+  body *{
+    visibility: hidden;
+  }
+  #relatorio, #relatorio *{
+    visibility: visible;
+  }
+  #relatorio{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  #relatorio table{
+    border-collapse: collapse;
+    width: 100%;
+  }
+  #relatorio tr, #relatorio th, #relatorio td{
+    border: 1px solid #000;
+  }
+  #relatorio button{
+    visibility: hidden;
+  }
+
+   .pesquisa-lista{
+    display: none !important;
+  }
+
+  #relatorio button{
+    display: none;
+  }
+
+}
+
